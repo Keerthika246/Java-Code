@@ -1,10 +1,14 @@
-public class Pattern {
-  public static void main(String[] args) {
-  	
-		System.out.println("       J       a        v           v          a");
-		System.out.println("       J    a     a     v         v         a  a");
-                      		System.out.println("J     J   aaaaa     V      V        aaaaa");
-    		System.out.println("  JJ     a        a         V             a        a" );
-    }
-  }
+class Pattern{
+public static void main(String[] args){
+int rows=5;
+for(int i = 1;i<= rows;i++){
+for(int j = 1;j<=i; j++){
+System.out.print("*");
+}
+System.out.print("X");
+}
+for(int k = rows-i; k>=1;k--){
+System.out.println();
+}
+}
 }
